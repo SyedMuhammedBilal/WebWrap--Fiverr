@@ -54,7 +54,7 @@ export default function Home() {
                 return(
                   <div className={styles.box}> 
                     {
-                      web.picture === null ? <img src={logo} /> : <img className={styles.img} src={web.picture} alt={styles.id} /> 
+                      web.picture === null ? <img src={logo} /> : <a href={`https://d.webwrap.com/review/${web.id}`}><img className={styles.img} src={web.picture} /></a> 
                     } 
                     <div className={styles.centered}>
                       <h3><span>{web.title}</span></h3> 

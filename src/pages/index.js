@@ -57,7 +57,9 @@ export default function Home() {
                       web.picture === null ? <img src={logo} /> : <a href={`https://d.webwrap.com/review/${web.id}`}><img className={styles.img} src={web.picture} /></a> 
                     } 
                     <div className={styles.centered}>
-                      <h3><span>{web.title}</span></h3> 
+                      <a style={{textDecoration: "none", color: "white"}} href={`https://d.webwrap.com/review/${web.id}`}>
+                        <h3><span>{web.title}</span></h3> 
+                      </a>
                     </div>
                   </div>            
                 )

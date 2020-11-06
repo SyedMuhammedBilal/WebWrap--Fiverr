@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Logo from '../assets/WebwrapLogo_Dark-square.png'
 import logo from '../assets/WrapLogo.png'
 import SideBar from '../components/SideBar';
 import './global.css'
@@ -54,13 +53,13 @@ export default function Home() {
                 return(
                   <div className={styles.box}> 
                     {
-                      web.picture === null ? <img src={logo} /> : <a href={`https://d.webwrap.com/review/${web.id}`}><img className={styles.img} src={web.picture} /></a> 
+                      web.picture === null ? <img src={logo} alt="logo" /> : <a href={`https://d.webwrap.com/review/${web.id}`}><img className={styles.img} src={web.picture} alt="pic" /></a> 
                     } 
-                    <div className={styles.centered}>
-                      <a style={{textDecoration: "none", color: "white"}} href={`https://d.webwrap.com/review/${web.id}`}>
-                        <h3><span>{web.title}</span></h3> 
-                      </a>
-                    </div>
+                    <a style={{textDecoration: "none", color: "white"}} href={`https://d.webwrap.com/review/${web.id}`}>
+                      <div className={styles.centered}>
+                          <h3><span>{web.title}</span></h3> 
+                      </div>
+                    </a>
                   </div>            
                 )
               })

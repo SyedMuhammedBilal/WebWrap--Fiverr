@@ -25,6 +25,7 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.28",
     "@storybook/addon-essentials": "^6.0.28",

@@ -2,8 +2,11 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import logo from '../assets/WrapLogo.png'
 import SideBar from '../components/SideBar';
+import styles from '../styles/webwrap.module.css';
 import './global.css'
-import styles from '../styles/webwrap.module.css'
+
+const BASE_URL = process.env.GATSBY_BASE_URL;
+console.log(BASE_URL);
 
 export default function Home() {
 
@@ -46,21 +49,21 @@ export default function Home() {
     <div>
       <SideBar />
       <div>
-      <div  className={styles.container}>
-      <div className={styles.contentBoxes} >
+        <div  className={styles.container}>
+          <div className={styles.contentBoxes} >
             {
-              data.webwrap.queryFilterableReviews.items.map((web) => {
+              data.webwrap.queryFilterableReviews.items.map((web, index) => {
                 return(
-                  <div className={styles.box}> 
+                  <a style={{textDecoration: "none", color: "white"}} href={`${BASE_URL}/review/${web.id}`}>
+                    <div className={styles.box}> 
                     {
-                      web.picture === null ? <img src={logo} alt="logo" /> : <a href={`https://d.webwrap.com/review/${web.id}`}><img className={styles.img} src={web.picture} alt="pic" /></a> 
+                      web.picture === null ? <img src={logo} alt="logo" /> : <img className={styles.img} src={web.picture} alt="pic" />
                     } 
-                    <a style={{textDecoration: "none", color: "white"}} href={`https://d.webwrap.com/review/${web.id}`}>
-                      <div className={styles.centered}>
-                          <h3><span>{web.title}</span></h3> 
-                      </div>
-                    </a>
-                  </div>            
+                    <div className={styles.centered}>
+                        <h3><span>{web.title}</span></h3> 
+                    </div>
+                    </div>            
+                  </a>
                 )
               })
             }

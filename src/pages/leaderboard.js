@@ -9,7 +9,6 @@ import MovieCreationIcon from '@material-ui/icons/MovieCreation';
 import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
 import ExposureIcon from '@material-ui/icons/Exposure';
 import PageviewIcon from '@material-ui/icons/Pageview';
-import AssignmentIcon from '@material-ui/icons/Assignment';
 import Mani from '../assets/mani.jpg';
 
 function LeaderBoard(){
@@ -21,29 +20,29 @@ function LeaderBoard(){
     
             <div className={styles.centerDivHeader}>
             <ul>
-            <Avatar className={styles.avatar}>
+            <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar}>
         <RateReviewIcon />
         </Avatar>
         <br/>
          <a>REVIEWS</a> </ul>
             <ul>
-            <Avatar className={styles.avatar} >
+            <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} >
         <EmojiEmotionsIcon />
         </Avatar>
         <br/> <a> FOLLOWERS </a> </ul>
             <ul>
-            <Avatar className={styles.avatar} > 
+            <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} > 
         <ThumbsUpDownIcon />
         </Avatar>
         <br/> <a> THUMBS UP </a> </ul>
             <ul>
-            <Avatar className={styles.avatar} >
+            <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} >
         <MovieCreationIcon/>
         </Avatar>
         <br/>
         <a> INVITES </a></ul>
             <ul>
-            <Avatar className={styles.avatar} >
+            <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} >
         <InsertInvitationIcon />
         </Avatar>
         <br/><a> CREADIBILITY </a></ul>
@@ -60,13 +59,13 @@ function LeaderBoard(){
              <h5> SULEMAN AHMED </h5>
              <table >
   <tr>
-    <th>Reviews</th>
-    <th>Followers</th>
-  </tr>
-  <tr>
     <td>4k</td>
     <td>12</td>
    
+  </tr>
+  <tr>
+    <th>Reviews</th>
+    <th>Followers</th>
   </tr>
 
 </table>
@@ -86,14 +85,14 @@ function LeaderBoard(){
              <div className={styles.profile}>
              <h5> SULEMAN AHMED </h5>
              <table >
-  <tr>
-    <th>Reviews</th>
-    <th>Followers</th>
-  </tr>
-  <tr>
+ <tr>
     <td>4k</td>
     <td>12</td>
    
+  </tr>
+  <tr>
+    <th>Reviews</th>
+    <th>Followers</th>
   </tr>
 
 </table>
@@ -115,14 +114,14 @@ function LeaderBoard(){
              <div className={styles.profile}>
              <h5> SULEMAN AHMED </h5>
              <table >
-  <tr>
-    <th>Reviews</th>
-    <th>Followers</th>
-  </tr>
-  <tr>
+             <tr>
     <td>4k</td>
     <td>12</td>
    
+  </tr>
+  <tr>
+    <th>Reviews</th>
+    <th>Followers</th>
   </tr>
 
 </table>

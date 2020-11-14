@@ -7,7 +7,7 @@
     background-color: white;
     display: flex;
     margin-left: 34%;
-    margin-top: 5%;
+    margin-top: 4%;
     height: 100%;
     flex-direction: column;
   }
@@ -21,6 +21,7 @@
   
   .centerDivHeader ul a {
     background-color: #ffffff;
+    color: gray;
   }
   
   .centerDivHeader ul {
@@ -36,12 +37,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: lavender;
+    background-color: #f1f1f1;
   }
   
   .leaderCont h3 {
-    background-color: lavender;
-    color: gray;
+    background-color: #f1f1f1;
+    color: #979dd0;
+    font-weight: 400;
   }
   
   /* leader board grid boxes */
@@ -52,7 +54,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
-    background-color: lavender;
+    background-color: #f1f1f1;
   }
   
   .boxes {
@@ -61,8 +63,8 @@
     background-color: #ffffff;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 150%;
-    border-radius: 3mm;
-    height: 85px;
+    border-radius: 1mm;
+    height: 100px;
     margin: 6%;
   }
   
@@ -77,8 +79,6 @@
     justify-content: center;
     width: 50%;
     height: 80%;
-    margin: 0%;
-    margin-top: -4px;
     align-items: center;
   }
   
@@ -106,6 +106,7 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 18%;
+    padding: 8px;
     font-size: 13px;
   }
   
@@ -151,6 +152,7 @@
     .centerDivHeader ul a {
       background-color: #ffffff;
       font-size: 5px;
+      color: gray;
     }
   
     .centerDivHeader ul {
@@ -166,11 +168,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .leaderCont h3 {
-      background-color: lavender;
+      background-color: #f1f1f1;
       color: gray;
       font-size: 10px;
       margin-left: 3%;
@@ -184,7 +186,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 10%;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .boxes {
@@ -193,8 +195,8 @@
       background-color: #ffffff;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       width: 120%;
-      border-radius: 3mm;
-      height: 85px;
+      border-radius: 1mm;
+      height: 105px;
       margin: 6%;
       margin-left: 7%;
     }
@@ -281,6 +283,7 @@
     .centerDivHeader ul a {
       background-color: #ffffff;
       font-size: 6px;
+      color: gray;
     }
   
     .centerDivHeader ul {
@@ -296,11 +299,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .leaderCont h3 {
-      background-color: lavender;
+      background-color: #f1f1f1;
       color: gray;
       font-size: 10px;
       margin-left: 3%;
@@ -314,7 +317,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 10%;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .boxes {
@@ -323,8 +326,8 @@
       background-color: #ffffff;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       width: 120%;
-      border-radius: 3mm;
-      height: 85px;
+      border-radius: 1mm;
+      height: 105px;
       margin: 6%;
       margin-left: 7%;
     }
@@ -370,6 +373,7 @@
       align-items: center;
       margin-top: 30%;
       font-size: 13px;
+      padding: 6px;
     }
   
     .point h4 {
@@ -420,11 +424,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .leaderCont h3 {
-      background-color: lavender;
+      background-color: #f1f1f1;
       color: gray;
       font-size: 12px;
       margin-left: 3%;
@@ -438,7 +442,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 10%;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .boxes {
@@ -447,8 +451,8 @@
       background-color: #ffffff;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       width: 150%;
-      border-radius: 3mm;
-      height: 85px;
+      border-radius: 1mm;
+      height: 105px;
       margin: 6%;
       margin-left: 10%;
     }
@@ -473,6 +477,7 @@
     }
     .profile table {
       background-color: #ffffff;
+      margin-top: -7px;
     }
     .profile th {
       background-color: #ffffff;
@@ -528,6 +533,7 @@
   
     .centerDivHeader ul a {
       background-color: #ffffff;
+      color: gray;
     }
   
     .centerDivHeader ul {
@@ -544,11 +550,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .leaderCont h3 {
-      background-color: lavender;
+      background-color: #f1f1f1;
       color: gray;
     }
   
@@ -560,7 +566,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 10%;
-      background-color: lavender;
+      background-color: #f1f1f1;
     }
   
     .boxes {
@@ -569,7 +575,7 @@
       background-color: #ffffff;
       box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       width: 150%;
-      border-radius: 3mm;
+      border-radius: 1mm;
       height: 85px;
       margin: 6%;
     }
@@ -578,6 +584,11 @@
       margin-top: 5%;
       margin: 5%;
     }
+
+    .box_c {
+        border: 1px solid black;
+    }
+
     .profile {
       background-color: #ffffff;
       display: flex;

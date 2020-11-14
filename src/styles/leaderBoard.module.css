@@ -349,7 +349,7 @@
     }
     .profile table {
       background-color: #ffffff;
-      margin-top: -4px;
+      margin-top: -8px;
     }
     .profile th {
       background-color: #ffffff;
@@ -368,7 +368,7 @@
       background-color: #ffffff;
       justify-content: flex-end;
       align-items: center;
-      margin-top: 18%;
+      margin-top: 30%;
       font-size: 13px;
     }
   

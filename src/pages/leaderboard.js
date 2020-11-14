@@ -19,7 +19,6 @@ function LeaderBoard(){
         {/* center div */}
         <div className={styles.centerDiv}>
     
-        {/* center div header */}
             <div className={styles.centerDivHeader}>
             <ul>
             <Avatar className={styles.avatar}>

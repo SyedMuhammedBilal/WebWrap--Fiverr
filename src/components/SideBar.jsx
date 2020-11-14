@@ -17,7 +17,7 @@ function SideBar(){
                 <Link  className={styles.list} to="/" >Wraps</Link>
                 <Link className={styles.list} >Follows</Link>
                 <Link className={styles.list} >Leaders</Link>
-                <Link className={styles.list} >Get it</Link>
+                <Link className={styles.list} to="/get-it" >Get it</Link>
                 <Link className={styles.list} to="/about" >About</Link>
             </ul>
             <br/>

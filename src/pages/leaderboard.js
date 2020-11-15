@@ -95,7 +95,7 @@ function LeaderBoard(){
                     <h3> Your current position in the reviews leaderboard: #50  </h3>
                     <div className={styles.contentBoxes}>
                         {
-                            data.webwrap.queryLeaders.leaders.map((leader) => {
+                            data.webwrap.queryLeaders.leaders.map((leader, index) => {
                                     
                                 return (
                                     <div className={styles.boxes} key={leader.id} >

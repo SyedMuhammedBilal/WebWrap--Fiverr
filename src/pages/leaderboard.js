@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, useStaticQuery } from "gatsby"
 import SideBar from '../components/SideBar';
 import styles from '../styles/leaderBoard.module.css';
@@ -36,6 +36,15 @@ function LeaderBoard(){
             }
         }
     `);
+
+
+    var review = [data.webwrap.queryLeaders.leaders.reviewsCount];
+    useEffect(() => {
+        console.log(review.sort(sortReview));
+        function sortReview(a,b){
+          return b[1] - a[1];
+        }
+    }, [])
 
     return(
         <div className={styles.main}>
@@ -87,6 +96,7 @@ function LeaderBoard(){
                     <div className={styles.contentBoxes}>
                         {
                             data.webwrap.queryLeaders.leaders.map((leader) => {
+                                    
                                 return (
                                     <div className={styles.boxes} key={leader.id} >
                                         {

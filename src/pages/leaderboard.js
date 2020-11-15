@@ -108,7 +108,7 @@ function LeaderBoard(){
                                             <div className={styles.point}>
                                                 <ColorIcon style={{fill: "#99781d"}} className={styles.pointicon} />
                                                 {
-                                                    leader.totalCredibilityScore === null ? <h4>None</h4> : <h4> {leader.totalCredibilityScore} </h4>
+                                                    leader.totalCredibilityScore === null ? <h4>No Points</h4> : <h4> {leader.totalCredibilityScore} Points</h4>
                                                 }
                                             </div>
                                     </div>

@@ -92,25 +92,25 @@ function LeaderBoard(){
                                         {
                                             leader.picture === null ? <Avatar className={styles.avt} alt="Remy Sharp" src={Logo} /> : <Avatar className={styles.avt} alt="Remy Sharp" src={leader.picture} />
                                         }
-                                            <div className={styles.profile}>
-                                                <h5> {leader.username} </h5>
-                                                <table >
-                                                    <tr>
-                                                        <td> {leader.reviewsCount} </td>
-                                                        <td> {leader.followersCount} </td>
-                                                    </tr>
-                                                    <tr>
-                                                    <th> Reviews </th>
-                                                    <th>Followers</th>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div className={styles.point}>
-                                                <ColorIcon style={{fill: "#99781d"}} className={styles.pointicon} />
-                                                {
-                                                    leader.totalCredibilityScore === null ? <h4>No Points</h4> : <h4> {leader.totalCredibilityScore} Points</h4>
-                                                }
-                                            </div>
+                                        <div className={styles.profile}>
+                                            <h5> {leader.username} </h5>
+                                            <table >
+                                                <tr>
+                                                    <td> {leader.reviewsCount} </td>
+                                                    <td> {leader.followersCount} </td>
+                                                </tr>
+                                                <tr>
+                                                <th> Reviews </th>
+                                                <th>Followers</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div className={styles.point}>
+                                            <ColorIcon style={{fill: "#99781d"}} className={styles.pointicon} />
+                                            {
+                                                leader.totalCredibilityScore === null ? <h4>No Points</h4> : <h4> {leader.totalCredibilityScore} Points</h4>
+                                            }
+                                        </div>
                                     </div>
                                 )    
                             })

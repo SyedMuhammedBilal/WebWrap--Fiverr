@@ -280,11 +280,11 @@
       color: white;
       width: 165%;
       height: 2.2vh;
-      font-size: 15px;
+      font-size: 13px;
       text-align: center;
       transition: 0.3s;
-      padding: 8%;
-      margin-top: 15%;
+      padding: 10%;
+      margin-top: 50%;
       border-radius: 10ch;
       text-decoration: none;
       box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),

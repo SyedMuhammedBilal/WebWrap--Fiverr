@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react';
 import { graphql, useStaticQuery } from "gatsby"
 import SideBar from '../components/SideBar';
+import IconBar from '../components/IconBar';
 import styles from '../styles/leaderBoard.module.css';
 import Avatar from '@material-ui/core/Avatar';
-import RateReviewIcon from '@material-ui/icons/RateReview';
-import RemoveRedEyeIcon from '@material-ui/icons/RemoveRedEye';
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
-import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
-import InsertInvitationIcon from '@material-ui/icons/InsertInvitation';
 import ColorIcon from '@material-ui/icons/Assessment';
-import PageviewIcon from '@material-ui/icons/Pageview';
 import Logo from '../assets/WrapLogo.png';
 
 function LeaderBoard(){
@@ -41,10 +36,10 @@ function LeaderBoard(){
     var review = [data.webwrap.queryLeaders.leaders.reviewsCount];
     useEffect(() => {
         console.log(review.sort(sortReview));
-        function sortReview(a,b){
+        function sortReview(a, b){
           return b[1] - a[1];
         }
-    }, [])
+    }, []);
 
     return(
         <div className={styles.main}>
@@ -52,43 +47,7 @@ function LeaderBoard(){
         
             <div className={styles.centerDiv}>
     
-                <div className={styles.centerDivHeader}>
-                    <ul>
-                        <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar}>
-                            <RateReviewIcon style={{backgroundColor: "#f1f1f1", fill: "#fc8403"}} />
-                        </Avatar>
-                        <br/>
-                        <a>REVIEWS</a> 
-                    </ul>
-                    <ul>
-                        <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} >
-                            <RemoveRedEyeIcon style={{backgroundColor: "#f1f1f1", fill: "#21b5a1"}} />
-                        </Avatar>
-                        <br/> 
-                        <a> FOLLOWERS </a> 
-                    </ul>
-                    <ul>
-                        <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} > 
-                            <ThumbUpIcon style={{backgroundColor: "#f1f1f1", fill: "#a88a67"}}  />
-                        </Avatar>
-                        <br/> 
-                        <a> THUMBS UP </a> 
-                    </ul>
-                    <ul>
-                        <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} >
-                            <PeopleAltIcon style={{backgroundColor: "#f1f1f1", fill: "#298fe3"}} />
-                        </Avatar>
-                        <br/>
-                        <a> INVITES </a>
-                    </ul>
-                    <ul>
-                        <Avatar style={{backgroundColor: "#f1f1f1f1"}} className={styles.avatar} >
-                            <ColorIcon style={{backgroundColor: "#f1f1f1", fill: "#99781d"}} />
-                        </Avatar>
-                        <br/>
-                        <a> CREDIBILITY </a>
-                    </ul>
-                </div>
+            <IconBar />
             
             {/* center div leader container */}
                 <div className={styles.leaderCont} >
@@ -100,7 +59,7 @@ function LeaderBoard(){
                                 return (
                                     <div className={styles.boxes} key={leader.id} >
                                         {
-                                            leader.picture === null ? <Avatar className={styles.avt} alt="Remy Sharp" src={Logo} /> : <Avatar className={styles.avt} alt="Remy Sharp" src={leader.picture} />
+                                            leader.picture === null ? <Avatar className={styles.avt} alt="Logo" src={Logo} /> : <Avatar className={styles.avt} alt="picture" src={leader.picture} />
                                         }
                                         <div className={styles.profile}>
                                             <h5> {leader.username} </h5>
@@ -110,8 +69,8 @@ function LeaderBoard(){
                                                     <td> {leader.followersCount} </td>
                                                 </tr>
                                                 <tr>
-                                                <th> Reviews </th>
-                                                <th>Followers</th>
+                                                    <th> Reviews </th>
+                                                    <th>Followers</th>
                                                 </tr>
                                             </table>
                                         </div>

@@ -15,12 +15,6 @@ function About() {
                     <img className={styles.img} src={AboutImage} alt="image" />   
                 </div>     
             </div>
-                <ul className={styles.textcont}>
-                    <Link  className={styles.text}>TOS</Link>
-                    <Link className={styles.text}>FAQ</Link>
-                    <Link className={styles.text}>HELP</Link>
-                    <Link className={styles.text}>CONTACT</Link>
-                </ul>
             </div>   
         </div>
     )

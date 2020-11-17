@@ -19,14 +19,21 @@ function SideBar(){
                 <Link className={styles.list} to="/leaders" >Leaders</Link>
                 <Link className={styles.list} to="/get-it" >Get it</Link>
                 <Link className={styles.list} to="/about" >About</Link>
+                <a className={styles.list} href="https://www.webwrap.com/get-webwrap/" >F.A.Q</a>
+                <a className={styles.list} href="https://www.webwrap.com/privacy-policy" >Privacy</a>
+                <a className={styles.list} href="https://www.webwrap.com/contact-us/" >Contact</a>
             </ul>
             <br/>
-            <div className={styles.socialMedia}>
-                <YouTubeIcon className={styles.icon} />
-                <InstagramIcon className={styles.icon} />
-                <LinkedInIcon className={styles.icon} />
-                <FacebookIcon className={styles.icon}/>
-                <TwitterIcon className={styles.icon} />
+            <div className={styles.socialMedia}>  
+                <YouTubeIcon 
+                    onClick={() => window.open('https://www.youtube.com/channel/UComfGMN2ZTfKwSp9QXzSYvQ', '_blank')} 
+                    className={styles.icon} />
+                <FacebookIcon 
+                    onClick={() => window.open('https://www.facebook.com/WebWrap.info/', '_blank')}  
+                    className={styles.icon}/>
+                <TwitterIcon 
+                    onClick={() => window.open('https://twitter.com/webwrapi', '_blank')} 
+                    className={styles.icon} />
             </div>
         </div>
     )

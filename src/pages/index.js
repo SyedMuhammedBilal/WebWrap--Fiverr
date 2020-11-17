@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import logo from '../assets/WrapLogo.png'
+import Topic from '../assets/topic.jpg';
 import SideBar from '../components/SideBar';
 import styles from '../styles/webwrap.module.css';
 import './global.css'
@@ -57,7 +58,7 @@ export default function Home() {
                   <a style={{textDecoration: "none", color: "white"}} href={`${BASE_URL}/review/${web.id}`}>
                     <div className={styles.box}> 
                     {
-                      web.picture === null ? <img src={logo} alt="logo" /> : <img className={styles.img} src={web.picture} alt="pic" />
+                      web.picture === null || web.picture === "" ? <img className={styles.img} src={logo} alt="logo" /> : <img className={styles.img} src={web.picture} alt="pic" />
                     } 
                     <div className={styles.centered}>
                         <h3><span>{web.title}</span></h3> 

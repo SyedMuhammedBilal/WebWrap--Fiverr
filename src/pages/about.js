@@ -3,7 +3,7 @@ import SideBar from '../components/SideBar';
 import BoxImage from '../assets/topic.jpg';
 import AboutImage from '../assets/about.png';
 import styles from '../styles/About.module.css';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 
 function About() {
     return (

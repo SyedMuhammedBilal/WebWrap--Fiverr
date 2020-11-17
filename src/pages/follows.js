@@ -33,7 +33,7 @@ function Followers(){
     }
   `);
 
-    console.log(data);
+    console.log(data)
 
     const useStyles = makeStyles((theme) => ({
         root: {

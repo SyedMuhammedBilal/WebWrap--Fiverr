@@ -66,20 +66,6 @@
     text-decoration: none;
   }
   
-  .but:hover {
-    background-color: #e16081;
-    color: white;
-    width: 165%;
-    height: 3vh;
-    font-size: 15px;
-    text-align: center;
-    transition: 0.3s;
-    padding: 8%;
-    margin-top: 15%;
-    border-radius: 10ch;
-    text-decoration: none;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
-  }
   
   .name {
     font-size: 15px;
@@ -199,21 +185,6 @@
       text-decoration: none;
     }
   
-    .but:hover {
-      background-color: #e16081;
-      color: white;
-      width: 165%;
-      height: 2.2vh;
-      font-size: 15px;
-      text-align: center;
-      transition: 0.3s;
-      padding: 8%;
-      margin-top: 15%;
-      border-radius: 10ch;
-      text-decoration: none;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
-        0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    }
   }
   @media only screen and (min-width: 300px) and (max-width: 500px) {
     .main {
@@ -275,21 +246,7 @@
       text-decoration: none;
     }
   
-    .but:hover {
-      background-color: #e16081;
-      color: white;
-      width: 165%;
-      height: 2.2vh;
-      font-size: 13px;
-      text-align: center;
-      transition: 0.3s;
-      padding: 10%;
-      margin-top: 50%;
-      border-radius: 10ch;
-      text-decoration: none;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
-        0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    }
+
   }
   @media (min-width: 500px) and (max-width: 800px) {
     .main {
@@ -327,21 +284,7 @@
       text-decoration: none;
     }
   
-    .but:hover {
-      background-color: #e16081;
-      color: white;
-      width: 165%;
-      height: 2.2vh;
-      font-size: 15px;
-      text-align: center;
-      transition: 0.3s;
-      padding: 8%;
-      margin-top: 15%;
-      border-radius: 10ch;
-      text-decoration: none;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
-        0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    }
+
   }
   
   @media (min-width: 800px) and (max-width: 1050px) {
@@ -380,19 +323,4 @@
       text-decoration: none;
     }
   
-    .but:hover {
-      background-color: #e16081;
-      color: white;
-      width: 165%;
-      height: 2.2vh;
-      font-size: 15px;
-      text-align: center;
-      transition: 0.3s;
-      padding: 8%;
-      margin-top: 15%;
-      border-radius: 10ch;
-      text-decoration: none;
-      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
-        0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    }
   }

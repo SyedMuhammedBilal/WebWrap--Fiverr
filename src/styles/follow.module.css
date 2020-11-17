@@ -11,7 +11,7 @@
     margin-left: 30%;
     margin-top: 5%;
     height: 100%;
-    padding: 0.9%;
+    padding: 1.0%;
     /* height: calc(100vh - 10px); */
     /* height: 100%; */
     /* height: calc(100% - 10px); */
@@ -27,7 +27,7 @@
     align-items: center;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.5ch;
-    height: 20vh;
+    height: 23vh;
   }
   
   .boxes:hover {
@@ -41,7 +41,7 @@
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.5ch;
     transition: 0.1s;
-    height: 20vh;
+    height: 23vh;
     border-inline: 4px solid #e16081;
   }
   
@@ -65,7 +65,10 @@
     border-radius: 10ch;
     text-decoration: none;
   }
-  
+  .but:hover {
+    background-color: #d32f58;
+    transition: all .5s;
+    }
   
   .name {
     font-size: 15px;

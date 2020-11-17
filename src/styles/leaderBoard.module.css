@@ -108,12 +108,9 @@
   }
   
   .point {
-    display: flex;
-    flex-direction: column;
     background-color: #ffffff;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 18%;
     padding: 8px;
     font-size: 13px;
   }

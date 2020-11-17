@@ -6,6 +6,9 @@ import styles from '../styles/leaderBoard.module.css';
 import Avatar from '@material-ui/core/Avatar';
 import ColorIcon from '@material-ui/icons/Assessment';
 import Logo from '../assets/WrapLogo.png';
+import Cred from '../SVG/cred1'
+import Cred2 from '../SVG/cred2'
+import Cred3 from '../SVG/cred3'
 
 function LeaderBoard(){
     const data = useStaticQuery(graphql`
@@ -75,7 +78,10 @@ function LeaderBoard(){
                                             </table>
                                         </div>
                                         <div className={styles.point}>
-                                            <ColorIcon style={{fill: "#99781d"}} className={styles.pointicon} />
+                                            {
+                                                leader.totalCredibilityScore <= 100 ? <Cred2 className={styles.pointicon} /> : leader.totalCredibilityScore <= 500 ? <Cred3 className={styles.pointicon} /> : <ColorIcon style={{fill: "#99781d"}} className={styles.pointicon} />
+                                            }
+                                            
                                             {
                                                 leader.totalCredibilityScore === null ? <h4>No Points</h4> : <h4> {leader.totalCredibilityScore} Points</h4>
                                             }

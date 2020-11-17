@@ -8,7 +8,6 @@ import clsx from 'clsx';
 import { createMuiTheme } from '@material-ui/core/styles';
 import Badges from '@material-ui/core/Badge';
 import { withStyles } from '@material-ui/core/styles';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
@@ -33,7 +32,7 @@ function Followers(){
     }
   `);
 
-    console.log(data)
+    console.log(data);
 
     const useStyles = makeStyles((theme) => ({
         root: {

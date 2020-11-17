@@ -22,16 +22,18 @@
     "gatsby": "^2.24.91",
     "gatsby-source-graphql": "^2.7.6",
     "react": "^16.12.0",
+    "react-circle-progress-bar": "^0.1.4",
+    "react-customizable-progressbar": "^1.0.2",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "@babel/core": "^7.12.3",
     "@storybook/addon-actions": "^6.0.28",
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-links": "^6.0.28",
     "@storybook/react": "^6.0.28",
     "babel-loader": "^8.1.0",
+    "dotenv": "^8.2.0",
     "prettier": "2.1.2",
     "react-is": "^17.0.1"
   },

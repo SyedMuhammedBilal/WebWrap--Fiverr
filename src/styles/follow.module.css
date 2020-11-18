@@ -103,6 +103,10 @@
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .table table {
+    border: none;
+  }
   
   .table th {
     background-color: #ffffff;

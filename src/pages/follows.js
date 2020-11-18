@@ -40,6 +40,7 @@ function Followers(){
           disableRipple: true,
           transition: 'none !important',
           animation: 'none !important',
+          create: () => 'none',
           '& > *': {
             backgroundColor: "white",
             marginLeft: theme.spacing(2),
@@ -100,16 +101,16 @@ function Followers(){
 
                   <div className={styles.profile} >
                     <a className={styles.name}> {user.name} </a>
-                    <a className={styles.prof}> Review ({user.bookmarksCount} posts) </a>
+                    <a className={styles.prof}> Reviewer ({user.bookmarksCount} points) </a>
                     <a className={styles.prof} > Joined on Oct,3,2020 </a>
-                    <table className={styles.table} >
+                    <table cellspacing="1" cellpadding="2" className={styles.table} >
                     <tr>
                       <th>Reviews</th>
                       <th>Followers</th>
                     </tr>
                     <tr  className={styles.revFol}>
-                      <td> {user.reviewsCount} </td>
-                      <td> {user.followersCount} </td>
+                      {user.reviewsCount === null ? <td>None</td> : <td> {user.reviewsCount} </td> } 
+                      {user.followersCount === null ? <td style={{marginLeft: '23px'}}>None</td> : <td> {user.followersCount} </td> }
                     </tr>
                   </table>
                   </div>

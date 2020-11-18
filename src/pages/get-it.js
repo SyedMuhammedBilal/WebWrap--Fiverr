@@ -19,18 +19,15 @@ function Getit(){
                             <p> for a more complete experience go ahead install Webwrap. 
                                 You will be able to start inviting followers and sharing you reviews in minutes </p> 
                         <div className={styles.buttoncont}> 
-                            <button className={styles.but}> Chrome Extension </button> 
-                            <button className={styles.but}> Android App (Beta)</button></div>
+                            <button onClick={() => window.open('https://chrome.google.com/webstore/detail/webwrap/ndgbomimpkpkhdgfjamadadpmfmbajbi?hl=en','_blank')} className={styles.but}> Chrome Extension </button> 
+                            <button onClick={() => window.open('https://play.google.com/store/apps/details?id=com.webwrap.androidservice&hl=en_US&gl=US', '_blank')} className={styles.but}> Android App (Beta)</button></div>
                         </div>               
                     </div>
                     <hr className={styles.hr} />
-                    <div className={styles.end} >
-                        <div className={styles.secondpoint}>
-                            <img  className={styles.imgsec} src={Logo} alt='image'/>
-                            <p> Go to any unique internet page you want to wrap and click our Blue hat! Now you can review , expand chat and invite followers </p>
-                        </div>
+                    <div className={styles.end} >    
+                        <iframe className={styles.image}  width="560" height="315" src="https://www.youtube.com/embed/A0CAJ6AXe0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <b/>
-                        <img src={Secimg} className={styles.image} alt='image' /> 
+                        <iframe className={styles.image} width="560" height="315" src="https://www.youtube.com/embed/s5ZCREanpBg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div> 
                 <br />   

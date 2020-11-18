@@ -72,6 +72,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: 60px;
   }
   .secondpoint {
     display: flex;
@@ -93,9 +94,10 @@
   }
   
   .image {
-    width: 20%;
-    height: 60%;
-    margin-top: 4.5%;
+    width: 30%;
+    height: 68%;
+    padding: 10px;
+    margin-top: 2.5%;
   }
   
   /* media queries */
@@ -292,7 +294,7 @@
       flex-direction: column;
       justify-content: center !important;
       align-items: center;
-      margin-right: 13px;
+      margin-right: 65px;
     }
     .secondpoint {
       display: flex;
@@ -315,7 +317,7 @@
     }
   
     .image {
-      width: 40%;
+      width: 75%;
       height: 35%;
       margin-top: 10%;
       margin-left: 7%;
@@ -350,7 +352,7 @@
   
     .img {
       background-color: rgb(44, 50, 100);
-      width: 33%;
+      width: 23%;
       height: 58%;
       margin-top: 5%;
     }
@@ -425,7 +427,7 @@
     .image {
       width: 40%;
       height: 35%;
-      margin-top: 20%;
+      margin-top: 10%;
       margin-left: 7%;
     }
   }

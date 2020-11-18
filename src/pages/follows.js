@@ -79,7 +79,7 @@ function Followers(){
                       <Avatar className={styles.avat}  alt="Profile Picture" src={user.picture} />
                     </StyledBadge>
                     {
-                      user.canFollow === true ? <a href='www.travelsplaces.com' className={styles.but} > Follow </a> : <div></div>
+                      user.canFollow === true ? <a className={styles.but} > Follow </a> : <div></div>
                     }  
                   </div>
 

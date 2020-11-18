@@ -37,18 +37,31 @@ function Followers(){
     const useStyles = makeStyles((theme) => ({
         root: {
           display: "flex",
+          disableRipple: true,
+          transition: 'none !important',
+          animation: 'none !important',
           '& > *': {
             backgroundColor: "white",
-            marginLeft: theme.spacing(2)
+            marginLeft: theme.spacing(2),
+            disableRipple: true,
+            create: () => 'none',
+            transition: 'none !important',
+            animation: 'none !important',
           },
         },
         shape: {
           width: 40,
           height: 40,
           backgroundColor: "gray",
+          create: () => 'none',
+          transition: 'none !important',
+          animation: 'none !important',
         },
         shapeCircle: {
           borderRadius: '60%',
+          create: () => 'none',
+          transition: 'none !important',
+          animation: 'none !important',
         },
       }));
 
@@ -59,13 +72,15 @@ function Followers(){
           border: `2px solid ${theme.palette.background.paper}`,
           padding: '0 4px',
           backgroundColor: "#b99e33",
+          disableRipple: true,
+          create: () => 'none',
         },
       }))(Badges);      
     
     const classes = useStyles();
       const circle = <div  className={clsx(classes.shape, classes.shapeCircle)} />
     
-    return(
+    return (
         <div className={styles.main}> 
         <SideBar/>
         <div className={styles.container} >

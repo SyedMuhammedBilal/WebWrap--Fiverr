@@ -20,6 +20,7 @@
     "@material-ui/icons": "^4.9.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.91",
+    "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-source-graphql": "^2.7.6",
     "react": "^16.12.0",
     "react-circle-progress-bar": "^0.1.4",

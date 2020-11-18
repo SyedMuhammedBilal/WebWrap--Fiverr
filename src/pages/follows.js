@@ -103,12 +103,12 @@ function Followers(){
                     <a className={styles.name}> {user.name} </a>
                     <a className={styles.prof}> Reviewer ({user.bookmarksCount} points) </a>
                     <a className={styles.prof} > Joined on Oct,3,2020 </a>
-                    <table cellspacing="1" cellpadding="2" className={styles.table} >
-                    <tr style={{border: '1px solid #fff',  borderCollapse: 'collapse'}}>
+                    <table style={{borderColor: '#FFFFFF',background: '#ffffff',}} cellspacing="1" cellpadding="2" className={styles.table} >
+                    <tr style={{borderColor: '#FFFFFF' , borderCollapse: 'collapse'}}>
                       <th>Reviews</th>
                       <th>Followers</th>
                     </tr>
-                    <tr style={{border: '1px solid #fff', borderCollapse: 'collapse'}} className={styles.revFol}>
+                    <tr style={{borderColor: '#FFFFFF',background: '#ffffff', borderCollapse: 'collapse'}} className={styles.revFol}>
                       {user.reviewsCount === null ? <td>None</td> : <td> {user.reviewsCount} </td> } 
                       {user.followersCount === null ? <td style={{marginLeft: '23px'}}>None</td> : <td> {user.followersCount} </td> }
                     </tr>

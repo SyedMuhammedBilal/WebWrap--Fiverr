@@ -102,10 +102,11 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: column-reverse;
+    display: none;
   }
 
   .table table {
-    border: 1px solid #ffffff;
+    display: none;
   }
   
   .table th {
